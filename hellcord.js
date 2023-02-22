@@ -4,7 +4,7 @@ function start() {
   
     ////CONFIG////
   
-    var link = "helltech.mywire.org"; // link to app webpage
+    var link = "https://helltech.mywire.org"; // link to app webpage
     var title = "Hellcord"; // title shown in navbar
     var id = "https://hellscaped-cw-plugins.netlify.app/hellcord.js"; // set this to the url location of your script
     
@@ -16,7 +16,7 @@ function start() {
     ExampleIFrame.style = "display: none;";
     ExampleIFrame.className = "app "+id;
     ExampleIFrame.id = id;
-    ExampleIFrame.src = "about:blank";
+    ExampleIFrame.src = link;
     
     ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
     ExampleLink.innerHTML = title; 
