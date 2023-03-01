@@ -5,7 +5,7 @@ function start() {
     ////CONFIG////
   
     var link = "https://helltech.mywire.org"; // link to app webpage
-    var title = "Hellcord <img src='https://helltech.mywire.org/assets/hellcord-nocolor.png'><\/img>"; // title shown in navbar
+    var title = "Hellcord"; // title shown in navbar
     var id = "https://hellscaped-cw-plugins.netlify.app/hellcord.js"; // set this to the url location of your script
     
     ////SCRIPT////
@@ -19,7 +19,7 @@ function start() {
     ExampleIFrame.src = link;
     
     ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
-    ExampleLink.innerHTML = title; 
+    ExampleLink.innerHTML = "<img style='height:64;width:64; src='https://helltech.mywire.org/assets/hellcord-nocolor.png'></img>"; 
     ExampleLink.className = id; 
     ExampleLink.addEventListener('dblclick', (e) => {
       uninstallApp(ExampleIFrame.id);
