@@ -5,7 +5,7 @@ function start() {
     ////CONFIG////
   
     var link = "https://helltech.mywire.org"; // link to app webpage
-    var title = "Hellcord"; // title shown in navbar
+    var title = "Hellcord <img src='https://helltech.mywire.org/assets/hellcord-nocolor.png'><\/img>"; // title shown in navbar
     var id = "https://hellscaped-cw-plugins.netlify.app/hellcord.js"; // set this to the url location of your script
     
     ////SCRIPT////
