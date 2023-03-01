@@ -19,11 +19,14 @@ function start() {
     ExampleIFrame.src = link;
     
     ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
-    ExampleLink.innerHTML = "<img style='height:64;width:64; src='https://helltech.mywire.org/assets/hellcord-nocolor.png'><\/img>"; 
     ExampleLink.className = id; 
     ExampleLink.addEventListener('dblclick', (e) => {
       uninstallApp(ExampleIFrame.id);
     });
+    var Logo = document.createElement("img");
+    Logo.src = "https://helltech.mywire.org/assets/hellcord-nocolor.png";
+    Logo.style = "width: 20px; height: 20px; margin-right: 5px;";
+    ExampleLink.appendChild(Logo);
     
     document.getElementById("navbar").appendChild(ExampleLink);
     document.getElementById("main").appendChild(ExampleIFrame);
