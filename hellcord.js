@@ -19,7 +19,7 @@ function start() {
     ExampleIFrame.src = link;
     
     ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
-    ExampleLink.innerHTML = "<img style='height:64;width:64; src='https://helltech.mywire.org/assets/hellcord-nocolor.png'></img>"; 
+    ExampleLink.innerHTML = "<img style='height:64;width:64; src='https://helltech.mywire.org/assets/hellcord-nocolor.png'><\/img>"; 
     ExampleLink.className = id; 
     ExampleLink.addEventListener('dblclick', (e) => {
       uninstallApp(ExampleIFrame.id);
