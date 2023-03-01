@@ -27,7 +27,7 @@ function start() {
     ExampleLink.innerHTML = title + ' </span><img src="'+Logo+'" class="appicon" alt="icon">';
     var styler = document.createElement("style");
     // make sure to center it
-    styler.innerHTML = ".appicon {width: 20px; height: 20px; margin-right: 5px; margin-left: 5px; vertical-align: middle;}";
+    styler.innerHTML = ".appicon {width: 32; height: 32; margin-right: 5px; margin-left: 5px; vertical-align: middle;}";
     document.head.appendChild(styler);
     
     document.getElementById("navbar").appendChild(ExampleLink);
