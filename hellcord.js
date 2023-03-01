@@ -24,9 +24,10 @@ function start() {
       uninstallApp(ExampleIFrame.id);
     });
     var Logo = "https://helltech.mywire.org/assets/hellcord-nocolor.png";
-    ExampleLink.innerHTML = '<span class="appname">'+title+' </span><img src="'+Logo+'" class="appicon" alt="icon">';
+    ExampleLink.innerHTML = title + ' </span><img src="'+Logo+'" class="appicon" alt="icon">';
     var styler = document.createElement("style");
-    styler.innerHTML = ".appicon {width: 20px; height: 20px; margin-right: 5px;} .appname {font-size: 14px; font-weight: 500;}";
+    // make sure to center it
+    styler.innerHTML = ".appicon {width: 20px; height: 20px; margin-right: 5px; margin-left: 5px; vertical-align: middle;}";
     document.head.appendChild(styler);
     
     document.getElementById("navbar").appendChild(ExampleLink);
