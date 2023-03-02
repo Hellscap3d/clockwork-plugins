@@ -1,6 +1,6 @@
 function start() {
   
-    ////MADE FOR VERSION 0.12.0 SCRIPT SYSTEM////
+    ////MADE FOR VERSION 0.14.0 SCRIPT SYSTEM////
   
     ////CONFIG////
   
@@ -29,6 +29,14 @@ function start() {
     // make sure to center it
     styler.innerHTML = ".appicon {width: 32px; height: 32px; margin-right: 5px; margin-left: 5px; vertical-align: middle;}";
     document.head.appendChild(styler);
+    ExampleLink.addEventListener('dblclick', (e) => {
+      uninstallApp(ExampleIFrame.id);
+    });
+    ExampleLink.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+    closeApp(ExampleIFrame.id);
+  });
     
     document.getElementById("navbar").appendChild(ExampleLink);
     document.getElementById("main").appendChild(ExampleIFrame);
